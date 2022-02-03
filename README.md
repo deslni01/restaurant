@@ -4,14 +4,13 @@
 
 ### Comments:
 
--   Live page can be found [here]().
+-   Live page can be found [here](https://deslni01.github.io/restaurant/#).
 
 ### Remaining Tasks:
 
--   [ ] HTML/JS
+-   [x] HTML/JS
 -   [ ] Style the document
     -   [ ] Make purdy
-    -   [ ] Sticky form for persistence while scrolling large library
 -   [ ] Footer element - persistent with other personal projects
 -   [ ] Take over the world
 
