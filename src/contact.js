@@ -1,24 +1,40 @@
-function contact() {
-	let content = document.querySelector('#content');
+import Icon from './austin-ban-IS6RwpuEJpY-unsplash.jpg';
+import mapIcon from './map.jpg';
 
-	let headerImg = document.createElement('img');
-	headerImg.src = '../src/patrick-tomasso-GXXYkSwndP4-unsplash.jpg';
+function contact() {
+	let contentDiv = document.querySelector('.content-div');
+
+	let headerImg = new Image();
+	headerImg.src = Icon;
 
 	let header = document.createElement('h1');
-	header.innerText = `Welcome to Nick's Restaurant`;
+	header.innerText = `Contact Nick`;
 
-	let bio = document.createElement('p');
-	bio.innerText = `This restaurant is the culmination of all of my time making
-restaurants. I've worked tirelessly to put inspiration on the
-plate to make each dish a representation of my love of food.`;
+	let info = document.createElement('p');
+	info.innerText = `You can reach my direct:`;
+
+	let list = document.createElement('ul');
+
+	let phone = document.createElement('li');
+	phone.innerText = '(507) 222-2222';
+
+	let email = document.createElement('li');
+	email.innerText = 'nick@chefmania.com';
+
+	let map = new Image();
+	map.src = mapIcon;
+	map.classList.add('map');
+
+	list.appendChild(phone);
+	list.appendChild(email);
+	list.appendChild(map);
 
 	let joinUs = document.createElement('p');
 	joinUs.innerText = `Come join us and enjoy a great meal!`;
 
-	content.appendChild(headerImg);
-	content.appendChild(header);
-	content.appendChild(bio);
-	content.appendChild(joinUs);
+	contentDiv.appendChild(headerImg);
+	contentDiv.appendChild(header);
+	contentDiv.appendChild(list);
 }
 
 export default contact;
