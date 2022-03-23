@@ -5,6 +5,18 @@
 ### Comments:
 
 -   Live page can be found [here](https://deslni01.github.io/restaurant/#).
+-   Looking at the code again, a few thoughts:
+    -   Make a function for creating the nav links?
+    ```javascript
+    createLink(name) {
+      let `${name}Link` = doc.create('a')
+      `${name}Link`.setAttribute('href', '#');
+      `${name}Link`.textContent = `${name}` // set first to uppercase tho
+      navMenu.appendChild(`${name}Link`);
+    }
+    // Then in code, just do createLink('home'), createLink('menu'), createLink('contact')?
+    ```
+    -   For the event listeners for the menu, can that be condensed into one loop rather than a separate event listener for each? Or should I put an eventlistener into the createLink() function above?
 
 ### Remaining Tasks:
 

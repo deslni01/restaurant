@@ -29,9 +29,16 @@ function contact() {
 	list.appendChild(email);
 	list.appendChild(map);
 
-	let joinUs = document.createElement('p');
-	joinUs.innerText = `Come join us and enjoy a great meal!`;
+	let thanks = document.createElement('p');
+	thanks.innerHTML = `Special Thanks to the following for their awesome photographs:
+	<ul>
+		<li><a href="https://unsplash.com/@austinban">Austin Ban</a> for the Contact header image</li>
+		<li><a href="https://unsplash.com/@lvnatikk">Lily Banse</a> for the Menu header image</li>
+		<li><a href="https://unsplash.com/@impatrickt">Patrick Tomasso</a> for the Home header image</li>
+	</ul>
+	`;
 
+	contentDiv.appendChild(thanks);
 	contentDiv.appendChild(headerImg);
 	contentDiv.appendChild(header);
 	contentDiv.appendChild(list);
